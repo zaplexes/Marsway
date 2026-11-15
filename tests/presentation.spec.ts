@@ -103,3 +103,36 @@ test('mission interests start equally and can be adjusted for the crew', async (
   await expect(interests.first()).toHaveValue('80');
   await expect(interests.nth(1)).toHaveValue('50');
 });
+
+for (const width of [1440, 390]) {
+  test(`Mars follows the explorer and returns to the full map at ${width}px`, async ({
+    page,
+  }) => {
+    await page.setViewportSize({ width, height: 900 });
+    await page.goto('/');
+    const canvas = page.locator('.map-host canvas');
+    await expect(canvas).toBeVisible();
+    await canvas.evaluate((node) =>
+      node.setAttribute('data-original-map', 'true'),
+    );
+    await page.locator('#sources').scrollIntoViewIfNeeded();
+    const dock = page.locator('.map-docked');
+    await expect(dock).toBeVisible();
+    const bounds = (await dock.boundingBox())!;
+    expect(bounds.x).toBeGreaterThanOrEqual(0);
+    expect(bounds.y).toBeGreaterThanOrEqual(0);
+    expect(bounds.x + bounds.width).toBeLessThanOrEqual(width);
+    expect(bounds.y + bounds.height).toBeLessThanOrEqual(900);
+    await expect(canvas).toHaveAttribute('data-original-map', 'true');
+    await page.screenshot({
+      path: `docs/playful-mars-docked-${width > 700 ? 'desktop' : 'mobile'}.png`,
+    });
+    await dock.getByRole('button', { name: /Full map/ }).click();
+    await expect(dock).toHaveCount(0);
+    await expect(canvas).toBeVisible();
+    await expect(canvas).toBeFocused();
+    await page.screenshot({
+      path: `docs/playful-mars-${width > 700 ? 'desktop' : 'mobile'}.png`,
+    });
+  });
+}

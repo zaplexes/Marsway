@@ -85,7 +85,7 @@ export function createMarsViewer(
     maximumRenderTimeChange: Infinity,
     contextOptions: { webgl: { alpha: false, preserveDrawingBuffer: true } },
   });
-  viewer.scene.backgroundColor = Color.fromCssColorString('#101c20');
+  viewer.scene.backgroundColor = Color.fromCssColorString('#171327');
   viewer.scene.globe.baseColor = Color.fromCssColorString('#79574b');
   viewer.scene.globe.showGroundAtmosphere = false;
   viewer.scene.globe.enableLighting = false;

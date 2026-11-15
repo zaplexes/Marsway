@@ -441,3 +441,21 @@ Initial state: no implementation was verified before the work recorded below. Ex
 - User authorized a serious cinematic narrated demo with restrained VFX, a natural AI voice, and a simulated Jezero base at 18.4446° N, 77.4509° E. Recorded genuine interactions on the public Marsway website using Playwright without mocked imagery or recreated interface screens.
 - Produced `artifacts/marsway-video/marsway-30s.mp4`, optional SRT captions, retained raw footage and reproducible production scripts. The film shows comparison, adjustable study interests, Belva's evidence gaps, and a minimum round-trip estimate. It preserves unknown terrain and unverified-route limitations. The closing card discloses AI-generated narration and the existing AI-generated logo.
 - Verified the rendered container is exactly 30 seconds at 1920 × 1080 and 30 fps, with H.264/AAC streams; a full FFmpeg decode completed without errors. Reviewed representative frames and checked audio levels. Detailed external imagery was unavailable during recording, so the app's genuine MOC fallback and availability state appear. No application behavior changed. Upload/public video hosting and final submission remain pending.
+
+### 2026-11-15 — Playful red Mars and persistent exploration map
+
+- User requested a red Mars, a map that remains prominent while scrolling, and a more playful exploration experience. Added a warm red tint to the global overview and cached fallback only; scientific imagery overlays and colour legends retain their source colours. The map summary discloses the overview tint.
+- Reworked presentation with a lavender introduction, warm planetary colours, chunky numbered adventure cards, rounded controls and lighter English copy. Existing destination selection, evidence and planning semantics remain intact.
+- Kept the same Cesium viewer mounted as the full map becomes a compact floating companion after its workspace scrolls away, on desktop and mobile. A keyboard-accessible return button restores the full map and focuses its canvas. Source attribution remains visible; additional bottom space lets final content scroll clear of the companion. Printing excludes the map and its extra space.
+- Verification: production build and lint of changed TypeScript files passed. Presentation, imagery fallback and tutorial browser suites passed (11 tests), including desktop/mobile docking, viewport bounds, viewer preservation, keyboard focus, red fallback pixels and original-colour CTX recovery. Screenshots are retained under `docs/playful-mars-*.png`. Repository-wide lint reports five existing errors in `artifacts/marsway-video/production/capture.mjs`; that unrelated script was not changed. No deployment was performed.
+
+### 2026-11-15 — Replace overview recolouring with a display filter
+
+- User reported a broken globe and requested a simple red filter. Removed the overview tile-repainting wrapper and restored the original globe base colour. Source tile loading, dimensions, texture upload and cached fallback now follow the original rendering path.
+- Applied a CSS sepia/saturation/hue filter to the overview canvas only. Scientific imagery and terrain/geology/slope overlays disable the filter; controls and attribution remain outside it.
+- Verification: production build, lint of affected TypeScript files and whitespace checks passed. Rechecked presentation and imagery fallback browser tests, including source-pixel preservation, recovery to detailed imagery and desktop/mobile persistent-map behavior.
+
+### 2026-11-15 — Restore original Mars colours
+
+- At the user's request, removed the red CSS filter and its conditional class. Mars now displays original source colours. Updated the map summary to remove the tint description.
+- Verification: production build passed.

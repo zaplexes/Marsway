@@ -14,6 +14,7 @@ import { WorldLayerLegend } from './WorldLayerLegend';
 import { stops } from './data/stops';
 import { mobilityProfile } from './data/mission';
 import { MarsMap } from './map/MarsMap';
+import { PersistentMap } from './map/PersistentMap';
 import { EvidenceInspector } from './evidence/EvidenceInspector';
 import { GeologyLegend } from './GeologyLegend';
 import { SourceRegistry } from './SourceRegistry';
@@ -202,7 +203,7 @@ export default function App() {
           />
           <span>
             MARSWAY
-            <small>EXPLORATION STARTS WITH EVIDENCE</small>
+            <small>BIG PLANET. YOUR ADVENTURE.</small>
           </span>
         </a>
         <div className="header-context">
@@ -240,11 +241,14 @@ export default function App() {
       <main>
         <div className="intro">
           <div>
-            <p className="eyebrow">HUMAN EXPLORATION / MARS</p>
+            <p className="eyebrow">
+              HEY, EXPLORER. WELCOME TO YOUR NEXT ADVENTURE.
+            </p>
             <h1>Choose your next destination on Mars.</h1>
             <p>
-              Help your crew decide where to go next. Compare destinations from
-              your base, inspect NASA imagery and plan the return trip.
+              A whole red planet. So many detours. Drop your base, discover
+              somewhere curious and build a trip worth taking — with real NASA
+              imagery along for the ride.
             </p>
           </div>
           <span className="preview-tag">
@@ -259,7 +263,7 @@ export default function App() {
             <span className="step-number">1</span>
             <span>
               <strong>Choose your base</strong>
-              <small>Pick a starting point on Mars</small>
+              <small>01 / Every adventure starts somewhere</small>
             </span>
           </a>
           <a
@@ -279,14 +283,14 @@ export default function App() {
             <span className="step-number">2</span>
             <span>
               <strong>Compare destinations</strong>
-              <small>See your top 10 and their scores</small>
+              <small>02 / Find your crew’s next obsession</small>
             </span>
           </a>
           <a href="#evidence-inspector">
             <span className="step-number">3</span>
             <span>
               <strong>Inspect the evidence</strong>
-              <small>Explore features, images and sources</small>
+              <small>03 / Follow your curiosity. Look closer.</small>
             </span>
           </a>
         </nav>
@@ -295,7 +299,7 @@ export default function App() {
         >
           <aside className="explorer-panel">
             <div className="panel-heading">
-              <span className="eyebrow">YOUR EXPLORATION WORKSPACE</span>
+              <span className="eyebrow">YOUR EXPEDITION PLAYGROUND</span>
               <h2>
                 {catalogFeature
                   ? `${catalogFeature.name} exploration`
@@ -632,7 +636,7 @@ export default function App() {
               science evidence.
             </p>
           </aside>
-          <div id="exploration-map" className="map-column">
+          <PersistentMap>
             <MarsMap
               base={base}
               tripPath={tripPath}
@@ -660,15 +664,15 @@ export default function App() {
                 ◎
               </span>
               <div>
-                <strong>Look closer. Keep the unknowns visible.</strong>
+                <strong>Go on. Give the red planet a spin.</strong>
                 <p>
-                  These images support exploration. They do not establish a
-                  feasible human route.
+                  Explore freely with original source imagery; routes remain
+                  unverified.
                 </p>
               </div>
               <span className="data-badge">SOURCE-LINKED</span>
             </div>
-          </div>
+          </PersistentMap>
           <aside
             id="science-information"
             className="details-panel"
