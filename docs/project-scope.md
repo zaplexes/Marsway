@@ -24,3 +24,13 @@ Walking astronauts, crewed vehicles and robotic ground rovers are selectable mod
 Ranking is preference-based decision support, not a measurement of scientific importance. Terrain remains unknown in ranking. Distance estimates are minimum surface arcs, not traversable routes. Detailed local elevation and estimated slope cover Jezero only. Hazard avoidance, verified exact drill locations, registered 3D terrain and safety certification remain unavailable.
 
 Static GitHub Pages hosting, local drafts, validated JSON import/export and printing remain the agreed infrastructure. Accounts, a backend and new paid services are not required.
+
+## Rover arcade experience
+
+Approved November 15, 2026: a pilotable rover in a stylized 3D scene follows the
+current trip's destination order and returns to base. A separate practice mission
+uses fictional destinations. Procedural terrain, schematic compressed routes,
+arcade motion and game scans are entertainment features; they do not supply
+georeferenced 3D relief, validated rover capabilities or completed scientific work.
+The game snapshots a plan and never changes its saved tasks or assumptions.
+See [rover expedition](rover-expedition.md).

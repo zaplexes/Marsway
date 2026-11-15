@@ -186,3 +186,18 @@ return links work at `/documentation/` locally and `/Marsway/documentation/`
 on GitHub Pages. Check it after a production build with
 `npm test -- tests/documentation.spec.ts`; the Pages smoke check also verifies
 the hosted-prefix documentation page.
+
+## Play a rover expedition
+
+Choose **Play**, then **Drive my plan** to pilot a rover through the current
+trip's destinations in order and return to base. Set a base and add destinations
+first, or launch **Start practice mission** immediately. Drive with WASD/arrows
+or the on-screen controls, scan each beacon with Space, and optionally enable
+route assist. Pause, restart and a discovery journal are included.
+
+The 3D scene is an arcade world with fictional terrain and compressed distances.
+It uses Canvas 2D perspective rendering and needs no WebGL, imagery service or new
+dependency. A game session snapshots the plan and keeps scans separate from the
+planner's task checklists. See [rover expedition](docs/rover-expedition.md) for
+controls, implementation and limitations. After building, run
+`npm test -- tests/expedition-game.spec.ts` to verify gameplay.

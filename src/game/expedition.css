@@ -1,0 +1,363 @@
+.expedition-launcher {
+  margin: 26px clamp(18px, 3vw, 34px);
+  padding: clamp(22px, 4vw, 48px);
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 260px;
+  gap: 32px;
+  background: #e9defa;
+  border: 2px solid #30243f;
+  border-radius: 24px;
+  box-shadow: 5px 6px 0 #30243f;
+}
+.expedition-launcher h2 {
+  font-size: clamp(28px, 3vw, 42px);
+  max-width: 600px;
+  margin: 14px 0;
+  font-weight: 850;
+}
+.expedition-launcher p {
+  max-width: 630px;
+}
+.game-disclaimer {
+  font-size: 11px;
+  margin-top: 12px;
+}
+.expedition-launch-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 22px 0 14px;
+}
+.expedition-launcher button {
+  min-height: 44px;
+  padding: 10px 16px;
+  border: 2px solid #30243f;
+  border-radius: 10px;
+  background: #fff5e4;
+  color: #30243f;
+  font-weight: 750;
+}
+.expedition-launch-actions button:first-child {
+  background: #30243f;
+  color: #fff5e4;
+}
+.expedition-launcher button:disabled {
+  opacity: 0.5;
+}
+.game-plan-status {
+  font-size: 12px;
+}
+.expedition-ticket {
+  align-self: center;
+  padding: 25px;
+  background: #ffce78;
+  border: 2px dashed #30243f;
+  border-radius: 16px;
+  transform: rotate(5deg);
+  color: #30243f;
+}
+.expedition-ticket > span,
+.expedition-ticket small {
+  font-size: 9px;
+  letter-spacing: 1.5px;
+}
+.expedition-ticket strong {
+  display: block;
+  margin: 20px 0;
+  font-size: 42px;
+  line-height: 0.97;
+  font-weight: 900;
+  letter-spacing: -2px;
+}
+.ticket-wheels {
+  font-size: 24px;
+  letter-spacing: 13px;
+  margin-top: 10px;
+}
+.expedition-dialog {
+  position: fixed;
+  width: min(1180px, calc(100vw - 32px));
+  max-width: none;
+  max-height: calc(100dvh - 24px);
+  padding: 0;
+  border: 2px solid #ffd68c;
+  border-radius: 20px;
+  background: #211c32;
+  color: #fff0d5;
+  overflow-y: auto;
+  overflow-wrap: anywhere;
+  box-shadow: 0 28px 100px #0009;
+}
+.expedition-dialog::backdrop {
+  background: #161020d9;
+  backdrop-filter: blur(5px);
+}
+.expedition-dialog p {
+  color: #cabed5;
+}
+.expedition-dialog button {
+  background: #383047;
+  color: #fff0d5;
+  border: 1px solid #8b7b94;
+  min-height: 44px;
+  padding: 8px 14px;
+  border-radius: 8px;
+  font-size: 12px;
+}
+.expedition-dialog button:focus-visible,
+.expedition-dialog canvas:focus-visible {
+  outline: 3px solid #95edda;
+  outline-offset: -3px;
+}
+.game-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 16px 22px;
+}
+.game-header .eyebrow {
+  font-size: 9px;
+  color: #ffd68c;
+}
+.game-header h2 {
+  margin-top: 4px;
+  font-size: 24px;
+  font-weight: 850;
+}
+.game-hud {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 12px 22px;
+  background: #30283e;
+  border-block: 1px solid #534357;
+}
+.game-hud > div {
+  min-width: 0;
+}
+.game-hud small {
+  font-size: 9px;
+  letter-spacing: 1.5px;
+  color: #cabed5;
+}
+.game-hud strong {
+  display: block;
+  margin-top: 3px;
+  font-size: 16px;
+  overflow-wrap: anywhere;
+}
+.game-viewport {
+  position: relative;
+  height: clamp(280px, 49dvh, 540px);
+  overflow: hidden;
+  background: #b16a73;
+}
+.game-viewport > canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+  touch-action: none;
+}
+.game-scene-tag {
+  position: absolute;
+  top: 15px;
+  left: 16px;
+  padding: 6px 9px;
+  border-radius: 4px;
+  background: #272139c9;
+  color: #f9dfbb;
+  font-size: 8px;
+  letter-spacing: 1px;
+  pointer-events: none;
+}
+.game-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 24px;
+  text-align: center;
+  background: #211c32b8;
+  backdrop-filter: blur(3px);
+}
+.game-overlay h3 {
+  font-size: clamp(22px, 3vw, 34px);
+  line-height: 1.1;
+  font-weight: 850;
+}
+.game-overlay button {
+  background: #ffd68c;
+  color: #30243f;
+  font-weight: 800;
+}
+.drive-pad {
+  position: absolute;
+  bottom: 16px;
+  left: 16px;
+  display: flex;
+  gap: 8px;
+}
+.drive-pad button {
+  width: 52px;
+  height: 48px;
+  padding: 0;
+  font-size: 27px;
+  background: #272139bd;
+  border-color: #f5d2ab99;
+  touch-action: none;
+  user-select: none;
+}
+.drive-pad button:active {
+  background: #77605e;
+}
+.game-objective {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 16px 22px;
+  border-bottom: 1px solid #534357;
+}
+.game-objective > span {
+  font-size: 32px;
+  color: #ffd68c;
+}
+.game-objective > div {
+  flex: 1;
+  min-width: 0;
+}
+.game-objective strong {
+  font-size: 14px;
+}
+.game-objective p {
+  margin-top: 4px;
+  font-size: 12px;
+}
+.game-objective button:not(:disabled) {
+  background: #ffd68c;
+  color: #30243f;
+  font-weight: 850;
+}
+.game-actions {
+  padding: 12px 22px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+}
+.game-actions > span {
+  color: #b8a8c1;
+  font-size: 10px;
+  flex: 1 1 220px;
+  padding-left: 8px;
+}
+.game-journal {
+  padding: 0 22px 16px;
+  font-size: 12px;
+}
+.game-journal summary {
+  cursor: pointer;
+  min-height: 40px;
+  align-content: center;
+  color: #ffd68c;
+}
+.game-journal ol {
+  padding-left: 24px;
+  color: #cabed5;
+}
+@media (max-width: 700px) {
+  .expedition-launcher {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  .expedition-ticket {
+    display: none;
+  }
+  .expedition-dialog {
+    width: calc(100vw - 12px);
+    max-height: calc(100dvh - 12px);
+    border-radius: 12px;
+  }
+  .game-header {
+    padding: 12px;
+    gap: 8px;
+  }
+  .game-header h2 {
+    font-size: 20px;
+  }
+  .game-header .eyebrow {
+    font-size: 7px;
+    letter-spacing: 1px;
+  }
+  .game-header button {
+    max-width: 110px;
+    font-size: 10px;
+  }
+  .game-hud {
+    padding: 10px 12px;
+    gap: 10px;
+  }
+  .game-hud small {
+    font-size: 8px;
+    letter-spacing: 0.5px;
+  }
+  .game-hud strong {
+    font-size: 12px;
+  }
+  .game-hud > div:first-child {
+    flex: 1;
+  }
+  .game-viewport {
+    height: clamp(270px, 42dvh, 420px);
+  }
+  .game-scene-tag {
+    top: 10px;
+    left: 8px;
+    max-width: 130px;
+    font-size: 7px;
+  }
+  .game-objective {
+    flex-wrap: wrap;
+    padding: 12px;
+    gap: 10px;
+  }
+  .game-objective > span {
+    display: none;
+  }
+  .game-objective > div {
+    flex-basis: 100%;
+  }
+  .game-objective button {
+    width: 100%;
+  }
+  .game-actions {
+    padding: 10px 12px;
+  }
+  .game-actions > span {
+    flex-basis: 100%;
+    padding-left: 0;
+  }
+  .game-journal {
+    padding: 0 12px 12px;
+  }
+  .drive-pad {
+    left: 12px;
+    bottom: 12px;
+  }
+  .drive-pad button {
+    width: 46px;
+  }
+  .main-nav {
+    flex-wrap: wrap;
+  }
+}
+@media print {
+  .expedition-launcher,
+  .expedition-dialog {
+    display: none !important;
+  }
+}

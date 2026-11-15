@@ -37,6 +37,7 @@ import { investigations } from './data/investigations';
 import type { Extent } from './data/coverage';
 import { localAssetUrl } from './data/asset-url';
 import { HistoricalEnvironment } from './HistoricalEnvironment';
+import { ExpeditionGame } from './game/ExpeditionGame';
 export default function App() {
   const [base, setBase] = useState<BasePosition | null>(null);
   const [placingBase, setPlacingBase] = useState(false);
@@ -225,6 +226,7 @@ export default function App() {
           </a>
           <a href="#expedition-base">Plan</a>
           <a href="#trip-planner">Trip</a>
+          <a href="#expedition-game">Play</a>
           <a
             href={localAssetUrl('/documentation/')}
             target="_blank"
@@ -862,6 +864,7 @@ export default function App() {
             }
           }}
         />
+        <ExpeditionGame draft={draft} />
         <EvidenceInspector
           key={catalogFeature?.id ?? selected?.id ?? 'no-evidence-target'}
           target={
