@@ -9,6 +9,11 @@ mission to search for water.
 
 Built with React, TypeScript and CesiumJS. [Open Marsway](https://zaplexes.github.io/Marsway/).
 
+## How to access the website
+
+[Open Marsway](https://zaplexes.github.io/Marsway/).
+https://zaplexes.github.io/Marsway/
+
 ## Local preview
 
 Use Node **26.11.1** (see `.nvmrc`); the dependency engine minimum is 22.17.0. No credentials, environment variables, Cesium ion account, database or paid services are required.
