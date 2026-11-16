@@ -2472,6 +2472,34 @@ summary:focus-visible {
 .header-context {
   color: #be3828;
 }
+.header-game-shortcut {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-height: 44px;
+  padding: 10px 16px;
+  border: 2px solid #30243f;
+  border-radius: 12px;
+  background: #ffce78;
+  color: #30243f;
+  box-shadow: 3px 3px 0 #30243f;
+  font-size: 12px;
+  font-weight: 800;
+  white-space: nowrap;
+}
+.header-game-shortcut:hover {
+  background: #e9defa;
+}
+.header-game-shortcut:focus-visible {
+  outline: 3px solid var(--rust);
+  outline-offset: 5px;
+}
+@media (min-width: 701px) and (max-width: 1150px) {
+  .site-header {
+    flex-wrap: wrap;
+  }
+}
 .main-nav a:hover {
   color: var(--rust);
   text-decoration: underline wavy;
@@ -2636,6 +2664,9 @@ summary:focus-visible {
   }
 }
 /* Keep the same live map mounted as it becomes a travelling companion. */
+.workspace .map-slot:has(.map-docked) {
+  z-index: 20;
+}
 .workspace .map-column.map-docked {
   position: fixed;
   z-index: 20;

@@ -470,3 +470,15 @@ Initial state: no implementation was verified before the work recorded below. Ex
 
 - Removed the requested administrative notices from the README, public documentation, presentation/submission notes, project decisions and technical brief. Updated the six technical diagram footers and regenerated their PNG/PDF exports, combined architecture PDF and overview image.
 - Verification: source-text and extracted-PDF scans found no remaining copies of the removed notices. Production build, public-documentation formatting and whitespace checks passed. Documentation browser checks: **3 passed**, covering desktop/mobile access without JavaScript and app navigation/session preservation.
+
+### 2026-11-15 — Updated presentation with rover gameplay
+
+- User requested a new recording of the updated site and game footage, taking time mainly from the introduction and closing. Created a separate revision under `artifacts/marsway-video-updated/`, preserving the earlier film.
+- Recorded the public site with its updated visual design and companion map. Demonstrated destination comparison, editable study interests, Belva's evidence, distance-only round-trip planning, manual driving of the actual plan, an explicit checkpoint scan and the start of an assisted return. No network fixtures, recreated interface screens or game-state modifications were used.
+- The 30-second English film uses a two-second introduction, two-second closing and seven seconds of gameplay. Narration, captions and the SRT identify unknown terrain, unverified routes and the game's fictional terrain. Retained the existing AI voice/logo disclosure and procedural ambient audio.
+- Verification: H.264/AAC output at 1920 × 1080 and 30 fps, exactly 30 seconds; full FFmpeg decode completed without errors. Reviewed representative frames, gameplay and audio levels. Capture-script ESLint, formatting, Python syntax and whitespace checks passed. Application source was not changed; no upload or submission was performed.
+
+### 2026-11-15 — Visible game shortcut and companion-map stacking
+
+- User reported the rotated game ticket covering the floating map and requested a game shortcut in the header gap. Elevated the docked map's ancestor stacking context so the ticket cannot cover or intercept the map. Replaced the small Play navigation link with a highlighted **Play rover** header shortcut to the game launcher, retaining responsive wrapping.
+- Verification: production build, affected-file ESLint, Prettier and whitespace checks passed. Presentation browser suite: **6 passed**, including desktop/mobile shortcut navigation and an actual hit-test within the ticket/map overlap. Reviewed desktop/mobile header screenshots and retained `docs/game-shortcut-map-stacking-desktop.png`. Existing Cesium bundle-size warning remains. No deployment performed.

@@ -110,6 +110,14 @@ for (const width of [1440, 390]) {
   }) => {
     await page.setViewportSize({ width, height: 900 });
     await page.goto('/');
+    const shortcut = page.getByRole('link', { name: 'Play rover' });
+    await expect(shortcut).toBeVisible();
+    await shortcut.click();
+    await expect(page).toHaveURL(/#expedition-game$/);
+    await expect(
+      page.getByRole('button', { name: 'Start practice mission' }),
+    ).toBeInViewport();
+    await page.evaluate(() => scrollTo(0, 0));
     const canvas = page.locator('.map-host canvas');
     await expect(canvas).toBeVisible();
     await canvas.evaluate((node) =>
@@ -136,3 +144,43 @@ for (const width of [1440, 390]) {
     });
   });
 }
+
+test('floating map stays clickable above the rotated game ticket', async ({
+  page,
+}) => {
+  await page.setViewportSize({ width: 1440, height: 900 });
+  await page.goto('/');
+  await page.locator('#expedition-game').evaluate((element) => {
+    window.scrollTo(
+      0,
+      element.getBoundingClientRect().top + window.scrollY - 200,
+    );
+  });
+  const dock = page.locator('.map-docked');
+  await expect(dock).toBeVisible();
+  await expect
+    .poll(async () =>
+      page.evaluate(() => {
+        const map = document
+          .querySelector('.map-docked')!
+          .getBoundingClientRect();
+        const ticket = document
+          .querySelector('.expedition-ticket')!
+          .getBoundingClientRect();
+        const left = Math.max(map.left, ticket.left);
+        const right = Math.min(map.right, ticket.right);
+        const top = Math.max(map.top, ticket.top);
+        const bottom = Math.min(map.bottom, ticket.bottom);
+        if (right <= left || bottom <= top) return 'no overlap';
+        return document
+          .elementFromPoint((left + right) / 2, (top + bottom) / 2)
+          ?.closest('.map-docked')
+          ? 'map on top'
+          : 'map obscured';
+      }),
+    )
+    .toBe('map on top');
+  await page.screenshot({
+    path: 'docs/game-shortcut-map-stacking-desktop.png',
+  });
+});

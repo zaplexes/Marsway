@@ -211,6 +211,9 @@ export default function App() {
           <span className="live-dot" /> MARS EXPLORATION{' '}
           <span className="separator">/</span> LOCAL PREVIEW
         </div>
+        <a className="header-game-shortcut" href="#expedition-game">
+          <span aria-hidden="true">▶</span> Play rover
+        </a>
         <nav className="main-nav" aria-label="Main navigation">
           <a href="#exploration-map">Map</a>
           <a
@@ -226,7 +229,6 @@ export default function App() {
           </a>
           <a href="#expedition-base">Plan</a>
           <a href="#trip-planner">Trip</a>
-          <a href="#expedition-game">Play</a>
           <a
             href={localAssetUrl('/documentation/')}
             target="_blank"

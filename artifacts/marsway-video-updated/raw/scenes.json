@@ -1,0 +1,70 @@
+[
+  {
+    "name": "01-globe",
+    "start": 7.36635643,
+    "duration": 8.777554658,
+    "focus": null
+  },
+  {
+    "name": "02-imagery",
+    "start": 24.413533224,
+    "duration": 5.490853233999999,
+    "focus": null
+  },
+  {
+    "name": "03-compare",
+    "start": 31.312410151,
+    "duration": 4.875250424999997,
+    "focus": {
+      "x": 47,
+      "y": 0.34375,
+      "width": 216,
+      "height": 232.140625
+    }
+  },
+  {
+    "name": "04-interests",
+    "start": 37.04464620500001,
+    "duration": 2.9509434049999967,
+    "focus": {
+      "x": 47,
+      "y": 406.84375,
+      "width": 220,
+      "height": 65.5
+    }
+  },
+  {
+    "name": "05-evidence",
+    "start": 45.669998901,
+    "duration": 4.707465554999999,
+    "focus": null
+  },
+  {
+    "name": "06-trip",
+    "start": 51.248370249,
+    "duration": 5.145599677000007,
+    "focus": null
+  },
+  {
+    "name": "07-game-drive",
+    "start": 57.241483544000005,
+    "duration": 3.292916236999993,
+    "focus": {
+      "x": 370,
+      "y": 90.90625,
+      "width": 1180,
+      "height": 898.1875
+    }
+  },
+  {
+    "name": "08-game-scan",
+    "start": 60.53484081,
+    "duration": 4.972962377999998,
+    "focus": {
+      "x": 370,
+      "y": 90.90625,
+      "width": 1180,
+      "height": 898.1875
+    }
+  }
+]

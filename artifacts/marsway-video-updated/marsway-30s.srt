@@ -1,0 +1,39 @@
+1
+00:00:00,100 --> 00:00:01,900
+Where next on Mars?
+
+2
+00:00:02,030 --> 00:00:05,900
+Marsway combines NASA imagery with scientific evidence.
+
+3
+00:00:06,030 --> 00:00:09,400
+Compare destinations, distances, and scores.
+
+4
+00:00:09,530 --> 00:00:11,900
+Adjust your study interests.
+
+5
+00:00:12,030 --> 00:00:15,900
+Inspect evidence. Terrain suitability remains unknown.
+
+6
+00:00:16,030 --> 00:00:18,150
+Plan your round trip.
+
+7
+00:00:18,150 --> 00:00:20,900
+Distance estimates, not verified routes.
+
+8
+00:00:21,030 --> 00:00:24,600
+Then drive your plan in our rover game.
+
+9
+00:00:24,600 --> 00:00:26,700
+Fictional terrain, real adventure.
+
+10
+00:00:28,100 --> 00:00:29,800
+Marsway.
