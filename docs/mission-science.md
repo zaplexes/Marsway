@@ -1,5 +1,7 @@
 # Destination selection and exploration modes
 
+> AI-assisted project documentation. See [AI use and source attribution](../AI-USE.md).
+
 The old standalone Mission settings and disabled comparison panel were removed. The current round-trip planner has optional mission settings and updates mode-specific proposed tasks. It defaults to distance-only estimates; all capability inputs remain blank until the user supplies them. See [trip planning](trip-planning.md).
 
 Accepted November 12, 2026: the user approved the proposed science mission and requested options for astronauts in vehicles and robotic ground rovers. “Hovers” was clarified as **robotic ground rovers**. The available modes are walking astronauts, astronauts in a crew vehicle and a robotic ground rover; walking is the initial selection.

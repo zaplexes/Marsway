@@ -1,3 +1,4 @@
+// AI-assisted project code. See AI-USE.md and assets/ai-disclosure.json.
 import { openMapStatus } from './map-controls';
 import { openJezeroControls } from './jezero-controls';
 import { expect, test } from '@playwright/test';

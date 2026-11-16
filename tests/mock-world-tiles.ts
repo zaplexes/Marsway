@@ -1,3 +1,4 @@
+// AI-assisted project code. See AI-USE.md and assets/ai-disclosure.json.
 import { fileURLToPath } from 'node:url';
 import type { Page } from '@playwright/test';
 

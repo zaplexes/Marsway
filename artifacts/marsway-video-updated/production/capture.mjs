@@ -1,3 +1,4 @@
+// AI-assisted project code. See AI-USE.md and assets/ai-disclosure.json.
 import { chromium, expect } from '@playwright/test';
 import { writeFile } from 'node:fs/promises';
 import console from 'node:console';

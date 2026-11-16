@@ -1,3 +1,4 @@
+// AI-assisted project code. See AI-USE.md and assets/ai-disclosure.json.
 import { useRef, useState } from 'react';
 import { mobilityProfiles, type MobilityMode } from '../data/mission';
 import { localAssetUrl } from '../data/asset-url';
@@ -398,6 +399,10 @@ export function TripPlanner({
           <li key={text}>{text}</li>
         ))}
       </ul>
+      <p className="quiet">
+        AI-assisted planning software · Source evidence retains its original
+        credits. See the project's AI use disclosure.
+      </p>
       <div className="trip-storage-actions">
         <button
           type="button"

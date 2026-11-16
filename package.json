@@ -2,6 +2,11 @@
   "name": "marsway",
   "version": "0.1.0",
   "private": true,
+  "aiAssistance": {
+    "scope": "Project-wide planning, research, design, code, data processing, tests, documentation and presentation",
+    "disclosure": "AI-USE.md",
+    "metadata": "assets/ai-disclosure.json"
+  },
   "type": "module",
   "engines": {
     "node": ">=22.17.0"

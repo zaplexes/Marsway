@@ -1,3 +1,4 @@
+// AI-assisted project code. See AI-USE.md and assets/ai-disclosure.json.
 import { localAssetUrl } from '../data/asset-url';
 import {
   Ellipsoid,

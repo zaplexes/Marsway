@@ -1,3 +1,4 @@
+// AI-assisted project code. See AI-USE.md and assets/ai-disclosure.json.
 import { cp, mkdir, readFile, stat } from 'node:fs/promises';
 import { pathToFileURL } from 'node:url';
 import process from 'node:process';

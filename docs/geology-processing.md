@@ -1,5 +1,7 @@
 # Regional Jezero geology display
 
+> AI-assisted project documentation. See [AI use and source attribution](../AI-USE.md).
+
 This is a display layer for regional geological interpretation. It does not identify an exact drill point, measure minerals, establish surface alignment or support a human route analysis. Reviewed November 11, 2026 locally (November 12 UTC).
 
 ## Official source and coordinate checks

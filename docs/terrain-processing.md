@@ -1,5 +1,7 @@
 # Jezero elevation overlay
 
+> AI-assisted project documentation. See [AI use and source attribution](../AI-USE.md).
+
 The local preview now includes a measured elevation **colour overlay**. It remains draped over a smooth reference sphere. This is not a 3D terrain tileset and does not provide slope or route analysis.
 
 ## Verified source

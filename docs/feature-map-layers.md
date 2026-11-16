@@ -1,5 +1,7 @@
 # Map layers for catalogue features
 
+> AI-assisted project documentation. See [AI use and source attribution](../AI-USE.md).
+
 The user approved showing reviewed imagery, elevation/relief, slope and geology where available, with explicit gaps. The layer controls now work across Mars. Selecting a catalogue feature updates the explorer heading and enables the reviewed global CTX mosaic. Source coverage follows the **current viewport**, including subsequent panning, zooming and returning to Jezero. It does not claim that a service envelope contains usable pixels everywhere.
 
 ## Controls

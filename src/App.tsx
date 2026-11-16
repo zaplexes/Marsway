@@ -1,3 +1,4 @@
+// AI-assisted project code. See AI-USE.md and assets/ai-disclosure.json.
 import { useCallback, useMemo, useState } from 'react';
 import elevation from './data/generated/elevation.json' with { type: 'json' };
 import {
@@ -205,6 +206,7 @@ export default function App() {
           <span>
             MARSWAY
             <small>BIG PLANET. YOUR ADVENTURE.</small>
+            <small className="ai-logo-mark">AI-GENERATED LOGO</small>
           </span>
         </a>
         <div className="header-context">
@@ -242,6 +244,18 @@ export default function App() {
           </a>
         </nav>
       </header>
+      <aside
+        className="ai-project-disclosure"
+        aria-label="AI assistance disclosure"
+      >
+        <strong>AI-ASSISTED PROJECT</strong>
+        <span>
+          Code, research, design and text · AI-generated logo and demo narration
+        </span>
+        <a href={`${localAssetUrl('/documentation/')}#ai-use`}>
+          AI use &amp; credits ↗
+        </a>
+      </aside>
       <main>
         <div className="intro">
           <div>
@@ -893,6 +907,29 @@ export default function App() {
             </p>
           </div>
           <SourceRegistry />
+          <section
+            id="ai-use"
+            className="ai-use-summary"
+            aria-label="Project AI use"
+          >
+            <h3>AI assistance and source authorship</h3>
+            <p>
+              ChatGPT/OpenAI Codex assisted throughout planning, research,
+              scientific source review, design, implementation, data processing,
+              debugging, tests, writing and presentation. The emblem and demo
+              narration are AI-generated. NASA and partner imagery and source
+              records retain their original credits. The game uses fictional
+              procedural terrain; no AI-generated scientific measurements are
+              presented.
+            </p>
+            <a href={`${localAssetUrl('/documentation/')}#ai-use`}>
+              Full AI disclosure
+            </a>
+            {' · '}
+            <a href={localAssetUrl('/ai-disclosure.json')}>
+              AI use metadata (JSON)
+            </a>
+          </section>
           <p className="footer-bottom">
             MARSWAY / LOCAL PREVIEW{' '}
             <span>

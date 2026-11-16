@@ -1,3 +1,4 @@
+// AI-assisted project code. See AI-USE.md and assets/ai-disclosure.json.
 import type { Page } from '@playwright/test';
 
 export async function openWorldLayers(page: Page) {

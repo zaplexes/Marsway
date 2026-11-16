@@ -1,5 +1,7 @@
 # Marsway — Team decisions still needed
 
+> AI-assisted project documentation. See [AI use and source attribution](../AI-USE.md).
+
 **Current direction — November 13, 2026:** Help astronauts choose the next destination on Mars. Feature types start with equal 50% study interest and user-adjustable priorities. Jezero investigations are optional examples. This supersedes earlier ancient-water mission and Jezero-only scope decisions below; see [current scope](project-scope.md).
 
 

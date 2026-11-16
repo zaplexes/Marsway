@@ -1,3 +1,4 @@
+# AI-assisted project code. See AI-USE.md and assets/ai-disclosure.json.
 """Reproduce a bounded PLACES table audit; never derive target coordinates."""
 
 import argparse

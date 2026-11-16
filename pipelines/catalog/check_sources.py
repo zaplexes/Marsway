@@ -1,3 +1,4 @@
+# AI-assisted project code. See AI-USE.md and assets/ai-disclosure.json.
 """Verify retained source metadata and display assets locally, without downloads."""
 
 import hashlib

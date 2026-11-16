@@ -1,3 +1,4 @@
+# AI-assisted project code. See AI-USE.md and assets/ai-disclosure.json.
 import importlib.util
 import tempfile
 import unittest

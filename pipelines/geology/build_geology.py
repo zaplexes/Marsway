@@ -1,3 +1,4 @@
+# AI-assisted project code. See AI-USE.md and assets/ai-disclosure.json.
 """Build a view-only geological interpretation overlay from USGS SIM 3464."""
 
 import argparse

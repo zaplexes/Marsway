@@ -1,3 +1,4 @@
+// AI-assisted project code. See AI-USE.md and assets/ai-disclosure.json.
 import type { BasePosition } from '../planning/BasePoint';
 import type { Extent } from '../data/coverage';
 export function withinViewport(

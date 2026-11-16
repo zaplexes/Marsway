@@ -1,3 +1,4 @@
+// AI-assisted project code. See AI-USE.md and assets/ai-disclosure.json.
 import { useEffect, useState } from 'react';
 import type { BasePosition } from './BasePoint';
 import {

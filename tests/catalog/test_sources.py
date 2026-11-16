@@ -1,3 +1,4 @@
+# AI-assisted project code. See AI-USE.md and assets/ai-disclosure.json.
 """Failure checks for the local source-integrity gate."""
 
 import json

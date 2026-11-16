@@ -1,3 +1,4 @@
+// AI-assisted project code. See AI-USE.md and assets/ai-disclosure.json.
 import type { TripDraft } from '../planning/trip';
 import { distanceKm, validPosition } from '../planning/ranking';
 

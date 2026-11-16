@@ -1,3 +1,4 @@
+# AI-assisted project code. See AI-USE.md and assets/ai-disclosure.json.
 """Generate the updated English presentation narration."""
 import asyncio
 from pathlib import Path

@@ -1,3 +1,4 @@
+# AI-assisted project code. See AI-USE.md and assets/ai-disclosure.json.
 """Retain sparse numerical terrain context; do not infer route eligibility."""
 
 import json

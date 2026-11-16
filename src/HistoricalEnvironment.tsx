@@ -1,3 +1,4 @@
+// AI-assisted project code. See AI-USE.md and assets/ai-disclosure.json.
 import { useState } from 'react';
 import history from '../data/manifests/meda-history.json' with { type: 'json' };
 export function HistoricalEnvironment() {

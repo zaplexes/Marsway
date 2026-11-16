@@ -1,3 +1,4 @@
+# AI-assisted project code. See AI-USE.md and assets/ai-disclosure.json.
 """Synthetic geometry checks; these coordinates are not real science stops."""
 
 import hashlib

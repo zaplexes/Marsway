@@ -1,3 +1,4 @@
+// AI-assisted project code. See AI-USE.md and assets/ai-disclosure.json.
 import { useEffect, useRef, useState } from 'react';
 import { featurePreview, previewSources } from './feature-imagery';
 import type { CatalogFeature } from './catalog';

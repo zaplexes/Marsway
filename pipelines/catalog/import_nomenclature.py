@@ -1,3 +1,4 @@
+# AI-assisted project code. See AI-USE.md and assets/ai-disclosure.json.
 """Import the official Mars named-feature feed for static, on-demand browsing."""
 
 import argparse

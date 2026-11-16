@@ -1,5 +1,7 @@
 # Release scope and infrastructure decision
 
+> AI-assisted project documentation. See [AI use and source attribution](../AI-USE.md).
+
 Decision recorded November 12, 2026: the user requested the entire checklist be addressed, with distance estimates by default and user-defined optional mission settings. The user explicitly chose local saving and exports and deferred accounts/backend. Historical MEDA observations are included. The user will complete the competition submission.
 
 ## Current architecture

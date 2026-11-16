@@ -1,3 +1,4 @@
+// AI-assisted project code. See AI-USE.md and assets/ai-disclosure.json.
 import { expect, test } from '@playwright/test';
 import { fileURLToPath } from 'node:url';
 import { mockWorldTiles } from './mock-world-tiles';

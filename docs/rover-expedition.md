@@ -1,5 +1,7 @@
 # Rover arcade expedition
 
+> AI-assisted project documentation. See [AI use and source attribution](../AI-USE.md).
+
 Choose **Play** in the app navigation. **Drive my plan** is available after setting a base and adding at least one trip destination. **Start practice mission** launches immediately with three fictional destinations. Neither mode requires a speed assumption, an account or a new service.
 
 ## Playing

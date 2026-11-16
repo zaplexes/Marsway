@@ -1,3 +1,4 @@
+// AI-assisted project code. See AI-USE.md and assets/ai-disclosure.json.
 import imageryReview from '../../data/manifests/imagery-review.json' with { type: 'json' };
 import worldReview from '../../data/manifests/world-layers-review.json' with { type: 'json' };
 

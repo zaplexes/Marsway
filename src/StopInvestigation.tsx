@@ -1,3 +1,4 @@
+// AI-assisted project code. See AI-USE.md and assets/ai-disclosure.json.
 import type { ScienceStop } from './data/stops';
 import { investigations } from './data/investigations';
 import { mobilityProfile, type MobilityMode } from './data/mission';

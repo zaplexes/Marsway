@@ -4,6 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
+      name="ai-disclosure"
+      content="Project-wide AI assistance for planning, research, design, code, processing, tests and text. AI-generated logo and demo narration."
+    />
+    <link
+      rel="describedby"
+      type="application/json"
+      href="../ai-disclosure.json"
+    />
+    <meta
       name="description"
       content="Marsway project documentation: astronaut destination selection, user guide, NASA data, methods, limitations and source code."
     />
@@ -87,6 +96,13 @@
       .brand img {
         width: 48px;
         height: 48px;
+      }
+      .ai-disclosure {
+        padding: 14px 18px;
+        border: 1px solid var(--line);
+        border-radius: 10px;
+        background: #fff0ce;
+        font-size: 14px;
       }
       .brand small {
         display: block;
@@ -335,7 +351,10 @@
     <header>
       <a class="brand" href="../" aria-label="Marsway app">
         <img src="../branding/marsway-logo.png" alt="" width="48" height="48" />
-        <span>MARSWAY<small>PROJECT DOCUMENTATION</small></span>
+        <span
+          >MARSWAY<small>PROJECT DOCUMENTATION</small
+          ><small>AI-GENERATED LOGO</small></span
+        >
       </a>
       <nav aria-label="Project links">
         <a href="../">Open the app</a>
@@ -343,6 +362,11 @@
       </nav>
     </header>
     <main id="main">
+      <p class="ai-disclosure">
+        <strong>AI-ASSISTED PROJECT</strong> · Code, research, design, data
+        processing and text developed with AI assistance. The logo and demo
+        narration are AI-generated. <a href="#ai-use">AI use and credits</a>.
+      </p>
       <div class="hero">
         <p class="eyebrow">Purpose · Methods · Evidence</p>
         <h1>Helping astronauts choose where to go next.</h1>
@@ -822,12 +846,50 @@ npm run check:data</code></pre>
           >
           and individual source terms.
         </p>
+        <h3 id="ai-use">Project-wide AI use</h3>
         <p>
-          OpenAI Codex assisted with implementation, documentation, source
-          investigation and automated checks. OpenAI image generation created
-          the app emblem using the team logo as a style reference. The team is
-          responsible for reviewing the results and scientific limitations. No
-          AI-generated scientific measurements are presented.
+          ChatGPT and OpenAI Codex assisted throughout the project: ideation,
+          architecture, source research and interpretation, interface and game
+          design, application and pipeline code, debugging, automated tests,
+          writing, translation, documentation, diagrams and presentation
+          editing.
+        </p>
+        <ul>
+          <li>
+            <strong>Logo:</strong> generated with OpenAI image generation and
+            visibly labeled beside the emblem. A
+            <a href="../branding/marsway-logo-ai-labeled.svg"
+              >labeled logo for sharing</a
+            >
+            includes its own visible watermark.
+          </li>
+          <li>
+            <strong>Code and processing:</strong> developed with AI assistance.
+            Scientific data imports and terrain derivatives are computational
+            outputs from cited products; the original NASA/partner records are
+            not AI-generated.
+          </li>
+          <li>
+            <strong>Game:</strong> AI-assisted implementation of fictional
+            procedural terrain, schematic routes, arcade motion and game text.
+          </li>
+          <li>
+            <strong>Presentation:</strong> AI-assisted script, browser recording
+            automation, editing and procedural ambience. The English voice is
+            AI-generated with en-US-GuyNeural through edge-tts. The final film
+            has a persistent watermark and AI disclosure in its metadata; app
+            and gameplay footage are genuine screen recordings.
+          </li>
+        </ul>
+        <p>
+          The team is responsible for reviewing the results and scientific
+          limitations. No AI-generated scientific measurements are presented.
+          Read the
+          <a href="https://github.com/zaplexes/Marsway/blob/master/AI-USE.md"
+            >full repository disclosure</a
+          >
+          or the
+          <a href="../ai-disclosure.json">machine-readable AI use metadata</a>.
         </p>
         <p>
           Marsway is an independent prototype, not a NASA operational system or

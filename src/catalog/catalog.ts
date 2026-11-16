@@ -1,3 +1,4 @@
+// AI-assisted project code. See AI-USE.md and assets/ai-disclosure.json.
 import review from '../../data/manifests/nomenclature-review.json' with { type: 'json' };
 import type { CandidateLocation } from '../data/candidate-locations';
 

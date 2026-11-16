@@ -1,3 +1,4 @@
+// AI-assisted project code. See AI-USE.md and assets/ai-disclosure.json.
 import { defineConfig, loadEnv } from 'vite';
 import react from '@vitejs/plugin-react';
 import { cesiumRuntimePlugin } from './scripts/cesium-runtime-plugin';

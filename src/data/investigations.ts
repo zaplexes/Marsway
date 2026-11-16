@@ -1,3 +1,4 @@
+// AI-assisted project code. See AI-USE.md and assets/ai-disclosure.json.
 import type { MobilityMode } from './mission';
 import review from '../../data/manifests/sample-location-review.json' with { type: 'json' };
 

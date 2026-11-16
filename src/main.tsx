@@ -1,3 +1,4 @@
+// AI-assisted project code. See AI-USE.md and assets/ai-disclosure.json.
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
 import App from './App';

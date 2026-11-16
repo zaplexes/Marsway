@@ -1,0 +1,77 @@
+{
+  "schemaVersion": 1,
+  "project": "Marsway",
+  "aiAssistedProject": true,
+  "disclosureUrl": "https://github.com/zaplexes/Marsway/blob/master/AI-USE.md",
+  "tools": [
+    "ChatGPT / OpenAI Codex",
+    "OpenAI image generation",
+    "edge-tts / en-US-GuyNeural synthetic English voice"
+  ],
+  "uses": [
+    "Ideation and architecture",
+    "Research, source summaries and interpretation",
+    "Code generation, editing, debugging and automated tests",
+    "Data import and scientific processing implementation",
+    "Writing, editing and translation",
+    "Interface design and logo generation",
+    "Procedural game implementation",
+    "Presentation script, recording automation, editing and narration"
+  ],
+  "codeAndDocumentationScope": [
+    "src/**",
+    "scripts/**",
+    "pipelines/**",
+    "tests/**",
+    "docs/**",
+    "assets/documentation/**",
+    "artifacts/marsway-video-updated/production/**",
+    "README.md",
+    "Project build and delivery configuration"
+  ],
+  "generatedVisualAssets": [
+    {
+      "path": "branding/marsway-logo.png",
+      "kind": "AI-generated emblem",
+      "displayDisclosure": "Visible AI-GENERATED label beside the logo",
+      "labeledShareAsset": "branding/marsway-logo-ai-labeled.svg"
+    }
+  ],
+  "derivedScientificData": {
+    "scope": [
+      "src/data/generated/**",
+      "assets/jezero-*.png",
+      "assets/terrain-context.json"
+    ],
+    "method": "Computational processing of cited datasets using AI-assisted code",
+    "aiGeneratedScientificMeasurements": false,
+    "provenance": "Original product credits, processing notes and source manifests remain authoritative"
+  },
+  "game": {
+    "aiAssistedImplementation": true,
+    "terrain": "Procedural fictional terrain",
+    "route": "Schematic, distance-compressed representation of a plan",
+    "scientificallyValidatedSimulation": false
+  },
+  "presentation": {
+    "path": "artifacts/marsway-video-updated/marsway-30s-ai-watermark.mp4",
+    "narration": "AI-generated English voice",
+    "narrationAssets": "artifacts/marsway-video-updated/audio/voice-*.mp3",
+    "audioMetadata": "AI-generation or AI-assisted synthesis acknowledged in each voice/ambience file",
+    "footage": "Actual website and gameplay screen recordings",
+    "graphics": "AI-generated existing logo and code-rendered framing/callouts",
+    "ambientAudio": "Original procedural synthesis from AI-assisted code",
+    "disclosures": [
+      "Persistent visible watermark",
+      "MP4 descriptive metadata",
+      "Production documentation"
+    ]
+  },
+  "exclusions": [
+    "NASA and partner imagery and scientific observations",
+    "Retained IAU/USGS source catalogue records",
+    "Third-party software and upstream documentation",
+    "Human-provided instructions and team reference materials"
+  ],
+  "responsibility": "The team is responsible for reviewing AI-assisted work and scientific limitations"
+}

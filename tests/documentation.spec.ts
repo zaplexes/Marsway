@@ -1,3 +1,4 @@
+// AI-assisted project code. See AI-USE.md and assets/ai-disclosure.json.
 import { expect, test } from '@playwright/test';
 import { fileURLToPath } from 'node:url';
 import { mockWorldTiles } from './mock-world-tiles';
@@ -49,6 +50,29 @@ for (const width of [1440, 390]) {
         page.getByRole('link', { name: 'View source code', exact: true }),
       ).toHaveAttribute('href', 'https://github.com/zaplexes/Marsway');
       await expect(page.locator('header img')).toBeVisible();
+      await expect(
+        page.locator('header').getByText('AI-GENERATED LOGO'),
+      ).toBeVisible();
+      await expect(
+        page.getByRole('heading', { name: 'Project-wide AI use' }),
+      ).toBeVisible();
+      const metadataLink = page.getByRole('link', {
+        name: 'machine-readable AI use metadata',
+      });
+      const metadataResponse = await page.request.get(
+        new URL((await metadataLink.getAttribute('href'))!, page.url()).href,
+      );
+      expect(metadataResponse.ok()).toBe(true);
+      const metadata = await metadataResponse.json();
+      expect(metadata.aiAssistedProject).toBe(true);
+      expect(
+        metadata.derivedScientificData.aiGeneratedScientificMeasurements,
+      ).toBe(false);
+      const labeledLogo = await page.request.get(
+        '/branding/marsway-logo-ai-labeled.svg',
+      );
+      expect(labeledLogo.ok()).toBe(true);
+      expect(await labeledLogo.text()).toContain('AI-GENERATED LOGO');
       await page.getByText('Run the source locally', { exact: true }).click();
       await expect(page.locator('pre')).toBeVisible();
       expect(
@@ -78,6 +102,9 @@ test('Docs opens separately and preserves the current base and responsive app la
     }),
   );
   await page.goto('/');
+  await expect(
+    page.getByRole('complementary', { name: 'AI assistance disclosure' }),
+  ).toBeVisible();
   await page.getByText('Enter coordinates instead', { exact: true }).click();
   await page.getByLabel('Base latitude').fill('18.4446');
   await page.getByLabel('Base longitude').fill('77.4509');

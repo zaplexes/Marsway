@@ -4,6 +4,7 @@ This revision uses a fresh recording of the public website at https://zaplexes.g
 
 Deliverables:
 
+- `marsway-30s-ai-watermark.mp4`: upload revision with a persistent **AI-GENERATED CONTENT** watermark identifying the narration and logo, and distinguishing real website/game footage. English AI-use disclosure is also embedded in the MP4 metadata. Duration is 29.8 seconds, with a short final fade to leave headroom below the 30-second limit.
 - `marsway-30s.mp4`: English presentation, 30 seconds, 1920 × 1080, 30 fps, H.264/AAC.
 - `marsway-30s.srt`: optional English closed captions. The movie also includes on-screen captions.
 - `raw/`: original browser recording, scene timing/focus metadata and review screenshots.
@@ -42,7 +43,9 @@ Run from the repository root:
 ```bash
 node artifacts/marsway-video-updated/production/capture.mjs
 /tmp/marsway-video-venv/bin/python artifacts/marsway-video-updated/production/narrate.py
+python3 scripts/annotate-ai-audio.py
 python3 artifacts/marsway-video-updated/production/render.py
+python3 artifacts/marsway-video-updated/production/watermark.py
 ```
 
 The renderer derives narration tempo from the measured audio duration to keep each line within its shot. The film is a local artifact; no upload or submission is performed by these scripts.

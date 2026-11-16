@@ -1,5 +1,7 @@
 # Inspect the evidence
 
+> AI-assisted project documentation. See [AI use and source attribution](../AI-USE.md).
+
 Implemented for the guide's third step after the user confirmed that meaning of “part 3.” This workspace reviews the app's retained sources; it does not perform new archive discovery or introduce new scientific measurements.
 
 ## Workflow

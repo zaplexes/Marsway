@@ -1,5 +1,7 @@
 # GitHub Pages hosting
 
+> AI-assisted project documentation. See [AI use and source attribution](../AI-USE.md).
+
 Target: https://zaplexes.github.io/Marsway/. The repository is currently public, as verified through GitHub's public API on November 11, 2026. The user selected GitHub Pages and showed the Pages source changed to **GitHub Actions**, with the custom-domain field empty. No paid upgrade, custom domain or credentials are required by the application.
 
 ## Why the initial site was blank

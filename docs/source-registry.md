@@ -1,5 +1,7 @@
 # Scientific source registry and local integrity checks
 
+> AI-assisted project documentation. See [AI use and source attribution](../AI-USE.md).
+
 The current preview has fourteen registered spatial/reference products: five orbital imagery services, DEM-derived elevation and slope displays, regional and global geological interpretations, global colour hillshade, three rover surface photographs and the IAU/USGS Mars named-feature catalogue. Open **Data & provenance → Review sources and limitations (14)** to inspect them. The registry shows source links, credits, dates, detail, coverage, coordinate context, known limitations and scoped SHA-256 records.
 
 `src/data/sources.ts` combines existing reviewed manifests. `src/data/layers.ts` now gets its imagery product IDs, footprints and maximum zoom levels from `data/manifests/imagery-review.json`, so rendering and provenance use the same records.

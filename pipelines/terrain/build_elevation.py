@@ -1,3 +1,4 @@
+# AI-assisted project code. See AI-USE.md and assets/ai-disclosure.json.
 """Build a georeferenced colour overlay, never a Cesium height tileset."""
 
 import argparse

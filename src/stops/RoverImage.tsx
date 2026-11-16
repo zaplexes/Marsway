@@ -1,3 +1,4 @@
+// AI-assisted project code. See AI-USE.md and assets/ai-disclosure.json.
 import { useState } from 'react';
 import images from '../../data/manifests/surface-images.json' with { type: 'json' };
 import { localAssetUrl } from '../data/asset-url';

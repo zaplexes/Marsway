@@ -1,3 +1,4 @@
+# AI-assisted project code. See AI-USE.md and assets/ai-disclosure.json.
 """Build an exploratory Mars DEM-gradient display; never classify walkability."""
 
 import argparse

@@ -1,3 +1,4 @@
+// AI-assisted project code. See AI-USE.md and assets/ai-disclosure.json.
 import { useEffect, useRef, useState, type ReactNode } from 'react';
 
 export function PersistentMap({ children }: { children: ReactNode }) {

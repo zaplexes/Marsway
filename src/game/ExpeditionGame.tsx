@@ -1,3 +1,4 @@
+// AI-assisted project code. See AI-USE.md and assets/ai-disclosure.json.
 import { useEffect, useRef, useState } from 'react';
 import type { TripDraft } from '../planning/trip';
 import {
@@ -37,7 +38,7 @@ export function ExpeditionGame({ draft }: { draft: TripDraft }) {
           find your way home.
         </p>
         <p className="game-disclaimer">
-          Arcade rover · fictional 3D terrain · compressed distances
+          AI-assisted game code · fictional 3D terrain · compressed distances
         </p>
         <div className="expedition-launch-actions">
           <button
@@ -301,7 +302,7 @@ function GameSession({
           data-z={hud.z.toFixed(2)}
         />
         <div className="game-scene-tag">
-          FICTIONAL TERRAIN / SCHEMATIC ROUTE
+          AI-ASSISTED GAME / FICTIONAL TERRAIN / SCHEMATIC ROUTE
         </div>
         {failure && (
           <div className="game-overlay" role="alert">

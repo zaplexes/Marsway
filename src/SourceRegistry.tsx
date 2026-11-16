@@ -1,3 +1,4 @@
+// AI-assisted project code. See AI-USE.md and assets/ai-disclosure.json.
 import { sourceRecords } from './data/sources';
 
 export function SourceRegistry() {

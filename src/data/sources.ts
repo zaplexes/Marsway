@@ -1,3 +1,4 @@
+// AI-assisted project code. See AI-USE.md and assets/ai-disclosure.json.
 import meda from '../../data/manifests/meda-history.json' with { type: 'json' };
 import imageryReview from '../../data/manifests/imagery-review.json' with { type: 'json' };
 import surfaceImages from '../../data/manifests/surface-images.json' with { type: 'json' };

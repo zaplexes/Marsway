@@ -1,3 +1,4 @@
+// AI-assisted project code. See AI-USE.md and assets/ai-disclosure.json.
 import { RequestState, type UrlTemplateImageryProvider } from 'cesium';
 import { localAssetUrl } from '../data/asset-url';
 import overview from '../data/generated/moc-overview.json' with { type: 'json' };

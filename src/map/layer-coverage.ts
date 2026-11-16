@@ -1,3 +1,4 @@
+// AI-assisted project code. See AI-USE.md and assets/ai-disclosure.json.
 import { classifyCoverage, type Coverage, type Extent } from '../data/coverage';
 import { tileSources } from '../data/layers';
 import elevation from '../data/generated/elevation.json' with { type: 'json' };

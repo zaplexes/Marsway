@@ -1,5 +1,7 @@
 # Marsway — submission and demonstration draft
 
+> AI-assisted project documentation. See [AI use and source attribution](../AI-USE.md).
+
 This is an editable handoff for the user, who will complete the submission. It is not an official form or a submitted entry.
 
 ## Public project links
@@ -52,7 +54,7 @@ Use the app’s Data & sources registry and [source registry guide](source-regis
 - Software: React, TypeScript, Vite and CesiumJS; retain their upstream notices and map credits.
 - NASA/JPL-Caltech surface photographs remain credited. Derived displays are identified as local processing rather than original observations.
 
-AI-assistance disclosure draft: “OpenAI Codex assisted with implementation, documentation, source investigation and automated checks. OpenAI image generation created the app emblem using the team logo as a style reference. The team is responsible for reviewing the results and scientific limitations.” Adjust to accurately describe the team’s full use of AI and the final official rules. No AI-generated scientific measurements are presented.
+AI-assistance disclosure: “Marsway was developed with project-wide assistance from ChatGPT/OpenAI Codex, including planning, architecture, research and interpretation, interface design, code, data processing, debugging, tests, writing, translation, documentation, diagrams and presentation editing. OpenAI image generation created the Marsway logo. The demonstration uses an AI-generated English voice through edge-tts. App and gameplay footage are actual recordings; game terrain is procedural and fictional. Source observations from NASA and partners retain their original attribution and are not AI-generated measurements. The team is responsible for reviewing the work and its limitations.” See [AI use](../AI-USE.md) and [metadata](../assets/ai-disclosure.json). Visible labels identify AI-assisted work and generated visual/audio content.
 
 ## Items the user completes
 

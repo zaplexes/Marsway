@@ -1,3 +1,4 @@
+// AI-assisted project code. See AI-USE.md and assets/ai-disclosure.json.
 export const scientificGoal = {
   id: 'destination-selection',
   title: 'Choose the next destination on Mars',

@@ -1,3 +1,4 @@
+// AI-assisted project code. See AI-USE.md and assets/ai-disclosure.json.
 import { expect, test, type Page } from '@playwright/test';
 import { fileURLToPath } from 'node:url';
 import { featurePreview, previewSources } from '../src/catalog/feature-imagery';

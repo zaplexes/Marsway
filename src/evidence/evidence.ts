@@ -1,3 +1,4 @@
+// AI-assisted project code. See AI-USE.md and assets/ai-disclosure.json.
 import type { CatalogFeature } from '../catalog/catalog';
 import { candidateLocations } from '../data/candidate-locations';
 import { sourceRecords, type SourceRecord } from '../data/sources';

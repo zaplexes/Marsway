@@ -1,3 +1,4 @@
+// AI-assisted project code. See AI-USE.md and assets/ai-disclosure.json.
 import type { Ellipsoid, Viewer } from 'cesium';
 import geology from '../data/generated/geology.json' with { type: 'json' };
 import { createRasterOverlay } from './create-raster-overlay';

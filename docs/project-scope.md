@@ -1,5 +1,7 @@
 # Marsway — Agreed Project Direction
 
+> AI-assisted project documentation. See [AI use and source attribution](../AI-USE.md).
+
 Updated November 13, 2026. This decision supersedes the Jezero ancient-water mission in the original project brief and earlier planning notes. The original Portuguese brief has been removed at the user’s request. This English document defines the current scope.
 
 ## Purpose

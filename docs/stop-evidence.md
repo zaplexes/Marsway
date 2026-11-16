@@ -1,5 +1,7 @@
 # Stop evidence and position review
 
+> AI-assisted project documentation. See [AI use and source attribution](../AI-USE.md).
+
 Reviewed November 11, 2026 in America/Sao_Paulo (November 12 UTC). This milestone adds reference photographs and reviews existing positions. It does not verify a walking route or establish a scientific goal.
 
 ## Surface references

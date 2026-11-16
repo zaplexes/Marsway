@@ -1,5 +1,7 @@
 # Exploratory Jezero DEM slope display
 
+> AI-assisted project documentation. See [AI use and source attribution](../AI-USE.md).
+
 Enable **Jezero estimated slope** in Map layers. The legend shows degrees on a fixed 0–90° scale, the observed range, opacity and source/method links. Elevation, geology and slope colours are viewed one at a time; orbital imagery and the selected approximate stop highlight remain independent.
 
 This is a local derivative of the reviewed [USGS CTX DEM](https://astrogeology.usgs.gov/search/map/mars_2020_terrain_relative_navigation_ctx_dtm_mosaic), Fergason et al. (2020), [doi:10.5066/P906QQT8](https://doi.org/10.5066/P906QQT8). Source bytes, coordinate handling and datum were reviewed for the existing [elevation display](terrain-processing.md). The slope build accepts only that pinned source SHA-256 and reuses its CRS/unit/nodata checks. It does not download another DEM or add dependencies.

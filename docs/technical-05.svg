@@ -63,4 +63,6 @@
 <text x="64" y="1690" font-family="DejaVu Sans,sans-serif" font-size="19" font-weight="400" fill="#9eb0c3">Read technical-brief.md for linked sources and assumptions.</text>
 <text x="64" y="1730" font-family="DejaVu Sans,sans-serif" font-size="17" font-weight="400" fill="#8298ae">Architecture proposal for discussion • No live services or validated mission scores</text>
 <text x="1400" y="1730" font-family="DejaVu Sans,sans-serif" font-size="20" font-weight="700" fill="#edb797">05 / 06</text>
+<metadata id="ai-assistance-metadata">AI-assisted diagram: content, design and source code developed with ChatGPT/OpenAI Codex. See ../AI-USE.md.</metadata>
+<text id="ai-assistance-label" x="64" y="1780" font-family="DejaVu Sans,sans-serif" font-size="15" font-weight="700" fill="#edb797">AI-ASSISTED DIAGRAM · Details: AI-USE.md</text>
 </svg>

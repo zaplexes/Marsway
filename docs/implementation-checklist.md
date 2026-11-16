@@ -1,5 +1,7 @@
 # Marsway — Implementation Checklist
 
+> AI-assisted project documentation. See [AI use and source attribution](../AI-USE.md).
+
 ### 2026-11-14 — Scene metadata formatting correction
 
 - Added the missing final newline to the video scene metadata and updated the capture script to write it on future recordings. Parsed JSON values remain identical.
@@ -482,3 +484,15 @@ Initial state: no implementation was verified before the work recorded below. Ex
 
 - User reported the rotated game ticket covering the floating map and requested a game shortcut in the header gap. Elevated the docked map's ancestor stacking context so the ticket cannot cover or intercept the map. Replaced the small Play navigation link with a highlighted **Play rover** header shortcut to the game launcher, retaining responsive wrapping.
 - Verification: production build, affected-file ESLint, Prettier and whitespace checks passed. Presentation browser suite: **6 passed**, including desktop/mobile shortcut navigation and an actual hit-test within the ticket/map overlap. Reviewed desktop/mobile header screenshots and retained `docs/game-shortcut-map-stacking-desktop.png`. Existing Cesium bundle-size warning remains. No deployment performed.
+
+### 2026-11-15 — Persistent AI watermark for the presentation
+
+- User requested a visible AI watermark after reviewing the submission requirements. Added `artifacts/marsway-video-updated/marsway-30s-ai-watermark.mp4` with a persistent English **AI-GENERATED CONTENT** label identifying the narration/logo and distinguishing genuine website/game footage. Embedded descriptive AI-use metadata and retained the original video.
+- Trimmed the final fade to 29.8 seconds to leave duration headroom below the submission limit. Verification: FFprobe confirmed 1920 × 1080 H.264/AAC, 29.8 seconds and disclosure metadata; a full FFmpeg decode passed. Reviewed the watermarked gameplay frame. Added a reproducible `production/watermark.py` script; no upload performed.
+
+### 2026-11-15 — Project-wide AI identification
+
+- User explicitly requested AI identification throughout the project. Added a visible app/documentation notice, an AI-generated logo label, game identification, a printed planning-software notice, expanded public credits, root `AI-USE.md`, package/HTML metadata and a public `assets/ai-disclosure.json` manifest. Identified AI assistance in team-authored source/configuration files and project Markdown documentation.
+- Created a code-native sharing wrapper for the existing logo with its own **AI-GENERATED LOGO** watermark. Labeled the seven source SVG diagrams and regenerated their PNG/PDF exports, combined architecture PDF and overview. Added AI provenance metadata to all eight English narration segments and procedural ambience, with reproducible annotation scripts. The presentation retains its persistent AI watermark.
+- Preserved NASA/partner imagery, original catalogue records, generated scientific-data files, source checksums and product credits. The disclosures distinguish AI-assisted research/processing code from externally authored observations and identify game terrain as fictional.
+- Verification: production build, repository ESLint and Python syntax passed; **64 retained source/display contracts verified**. Documentation, presentation, game and new AI-identification browser suites: **14 passed**, covering desktop/mobile, documentation without JavaScript, public metadata/logo access, gameplay and responsive notices. Reviewed the labeled logo and mobile documentation; extracted PDF text confirms AI labels in all six architecture pages and the workflow. No deployment or submission performed.

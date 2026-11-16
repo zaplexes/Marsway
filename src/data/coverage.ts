@@ -1,3 +1,4 @@
+// AI-assisted project code. See AI-USE.md and assets/ai-disclosure.json.
 export type Extent = readonly [number, number, number, number];
 export type Coverage = 'inside' | 'partial' | 'outside' | 'unknown';
 function longitudeParts(west: number, east: number): [number, number][] {

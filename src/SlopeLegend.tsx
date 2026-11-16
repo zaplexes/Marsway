@@ -1,3 +1,4 @@
+// AI-assisted project code. See AI-USE.md and assets/ai-disclosure.json.
 import slope from './data/generated/slope.json' with { type: 'json' };
 
 export function SlopeLegend({

@@ -1,3 +1,4 @@
+// AI-assisted project code. See AI-USE.md and assets/ai-disclosure.json.
 import manifest from '../data/generated/terrain-context.json' with { type: 'json' };
 import { localAssetUrl } from '../data/asset-url';
 import type { BasePosition } from './BasePoint';

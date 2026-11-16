@@ -1,5 +1,11 @@
 # Marsway
 
+**AI-assisted project:** ChatGPT/OpenAI Codex assisted with planning, research,
+design, code, data-processing implementation, tests, writing and presentation.
+The logo and English demo narration are AI-generated. See [AI use and provenance](AI-USE.md)
+and the [machine-readable disclosure](assets/ai-disclosure.json). Credited NASA
+and partner observations are external source data, not AI-generated measurements.
+
 Marsway helps astronauts decide where to go next on Mars. Set a simulated base,
 compare nearby named features, inspect NASA imagery and supporting evidence,
 and prepare a round trip with your own mission assumptions. Every feature type

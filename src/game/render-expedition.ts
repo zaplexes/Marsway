@@ -1,3 +1,4 @@
+// AI-assisted project code. See AI-USE.md and assets/ai-disclosure.json.
 import { terrainHeight, type Expedition, type RoverState } from './expedition';
 
 type Vec3 = [number, number, number];

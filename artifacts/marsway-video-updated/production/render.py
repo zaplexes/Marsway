@@ -1,3 +1,4 @@
+# AI-assisted project code. See AI-USE.md and assets/ai-disclosure.json.
 """Render a 30-second film from genuine browser captures and graphic overlays."""
 import json
 from pathlib import Path

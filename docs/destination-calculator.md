@@ -1,5 +1,7 @@
 # Destination calculator
 
+> AI-assisted project documentation. See [AI use and source attribution](../AI-USE.md).
+
 Accepted November 12, 2026: the user requested a selectable astronaut base, the top ten destinations ranked by value rather than proximity, and reasons/points for each criterion. The user approved adjustable starting weights: study potential 50, distance 30, terrain 20, feature-type study heuristics, and unknown-terrain score ranges.
 
 ## Use

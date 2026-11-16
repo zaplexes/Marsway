@@ -1,3 +1,4 @@
+// AI-assisted project code. See AI-USE.md and assets/ai-disclosure.json.
 import { addImageryFallback } from './imagery-fallback';
 import { localAssetUrl } from '../data/asset-url';
 import {

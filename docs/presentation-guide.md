@@ -1,5 +1,7 @@
 # Marsway demonstration
 
+> AI-assisted project documentation. See [AI use and source attribution](../AI-USE.md).
+
 ## Core message
 
 **Marsway helps astronauts decide where to go next on Mars by bringing destination comparison, NASA imagery and source evidence into one planning workspace.**

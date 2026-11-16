@@ -1,5 +1,7 @@
 # Round trips, mission assumptions and field plans
 
+> AI-assisted project documentation. See [AI use and source attribution](../AI-USE.md).
+
 The planner starts in distance-only mode: set a simulated base, select a destination and choose **Add selected destination to trip**, or add the three Jezero references. Up to twelve distinct stops can be reordered or removed. The last leg always returns to the base. Dashed cyan map segments represent hypothetical shortest surface arcs, never a historical rover track or validated traverse.
 
 Distances use the same 3,396,190 m sphere as the map and calculator. They are lower bounds between display references: exact sample drill points and catalogue observation sites remain unverified. No obstacle avoidance, walkability, vertical travel or safe return is inferred. Antipodal points have a defined distance but no unique shortest path; numerical terrain context omits such legs.
