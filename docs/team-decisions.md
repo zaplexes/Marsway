@@ -96,8 +96,6 @@ These choices can wait until the core walking excursion is defined. They are not
   - Decision: Not yet recorded.
 - [ ] **Submission scope:** Which demonstrated features will the team submit, and who prepares the project description, demonstration and references?
   - Decision: Undecided. Required format and language must follow the applicable event requirements.
-- [ ] **Pre-event work:** Obtain organizer clarification on how the existing pre-event implementation may be used in the intended submission.
-  - Outcome: Not established; see the existing timing notes in [README](../README.md).
 - [ ] **Maintenance owner:** Who will maintain the app, refresh reviewed scientific data and handle release issues after handoff?
   - Decision: Undecided.
 

@@ -1,6 +1,6 @@
 # Marsway — submission and demonstration draft
 
-This is an editable handoff for the user, who will complete the submission. It is not an official form, a submitted entry or proof of eligibility. Project work began before the official event; retain that disclosure and confirm permitted use with the organizer. No organizer message has been sent.
+This is an editable handoff for the user, who will complete the submission. It is not an official form or a submitted entry.
 
 ## Public project links
 
@@ -59,7 +59,6 @@ AI-assistance disclosure draft: “OpenAI Codex assisted with implementation, do
 - Confirm local/universal event, timezone, deadline, team details, challenge selection, contact and any maintenance responsibility.
 - Review the official submission guide when available, required fields/language, presentation/media requirements and current AI/attribution rules.
 - Decide the final demonstrated scope, record the demonstration and submit the official entry.
-- Confirm organizer treatment of the pre-event implementation; eligibility is not established here.
 - Confirm the public site and project/source links work for judges before submission.
 
 Official guide status checked November 12, 2026: the [organizer’s November 5 answer](https://github.com/nasa/spaceapps/discussions/1839) says the Project Submission Guide will be posted November 13 on the [resources page](https://www.spaceappschallenge.org/resources/). The resources page returned HTTP 502 during this review. Current official form/media requirements cannot be marked verified before the guide is reviewed.

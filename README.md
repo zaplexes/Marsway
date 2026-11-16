@@ -9,11 +9,6 @@ mission to search for water.
 
 Built with React, TypeScript and CesiumJS. [Open Marsway](https://zaplexes.github.io/Marsway/).
 
-Project work began on November 11, 2026. The organizer’s
-[timing clarification](https://github.com/nasa/spaceapps/discussions/1827)
-requires project work to begin at the official hackathon start. Competition
-eligibility remains unconfirmed.
-
 ## Local preview
 
 Use Node **26.11.1** (see `.nvmrc`); the dependency engine minimum is 22.17.0. No credentials, environment variables, Cesium ion account, database or paid services are required.

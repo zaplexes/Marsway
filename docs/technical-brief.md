@@ -190,10 +190,4 @@ Browser → CDN for the frontend; browser → API for metadata and analysis; bro
 - [NASA scientific objectives](https://science.nasa.gov/planetary-science/programs/mars-exploration/mars-science-objectives/)
 - [USGS Jezero regional geologic map](https://www.usgs.gov/maps/geologic-map-jezero-crater-and-nili-planum-region-mars)
 
-## Competition timing
-
-The November 5, 2026 organizer clarification permits pre-event research and resource review, while project work begins at the official hackathon start. Confirm treatment of pre-event design artifacts with the organizer before using them in the submission.
-
-Source: https://github.com/nasa/spaceapps/discussions/1827
-
 Current static implementation: [feature map layers](feature-map-layers.md) connect four public services with retained metadata, source legends and failure/coverage states. This is a curated visual layer registry rather than the proposed analysis API or global image-archive search.

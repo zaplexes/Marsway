@@ -42,5 +42,3 @@ Open `https://zaplexes.github.io/Marsway/` in a private browser window and confi
 that the displayed release contains the changes you intend to demonstrate.
 Local changes do not update the public site until published. Check the current
 official submission guide for media limits, required fields and AI disclosure.
-The team must resolve its recorded pre-event eligibility question with the
-organizer; changing the mission does not resolve that question.

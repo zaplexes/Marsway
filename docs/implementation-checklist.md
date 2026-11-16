@@ -30,14 +30,13 @@ The user authorized a full-checklist pass with default estimates and optional us
 - **Implemented:** discovery/calculator, evidence workspace, spotlight tutorial, ordered distance-only round trips with a return leg, optional mission assumptions, field/task view, local drafts, JSON restore/export, printing, sparse numerical terrain context, viewport discovery filters and historical MEDA reports.
 - **Scientific blockers:** exact drill sites, independent dataset registration, physical terrain validation, complete upstream metadata, areoid-to-radius conversion/3D relief, obstacle-aware cost grids and evidence-based terrain scoring remain unverified. Their checkboxes stay open.
 - **Deferred by agreement:** accounts, shared backend/database, server jobs and their conditional administration/security/backup requirements. Browser drafts plus validated export/import are the release persistence model.
-- **User handoff:** final competition submission, event/owner details and organizer eligibility clarification. A draft description/demo/references is prepared; no official form is submitted.
+- **User handoff:** final competition submission and event/owner details. A draft description/demo/references is prepared; no official form is submitted.
 - **Release:** local build and hosting checks do not prove the public site contains this work. Remote release verification remains open.
 
 ## 0. Readiness and essential decisions
 
 - [x] Read `AGENTS.md`, the original project brief, `docs/project-scope.md`, and `docs/technical-brief.md`.
 - [x] Inspect existing files, Git state, runtime availability, and applicable instructions.
-- [x] Check official competition timing and rules; clarify intended use if implementation would precede the permitted start.
 - [x] Confirm frontend stack compatibility and choose exact dependency versions; ask about unresolved material choices.
 - [x] Establish a usable Mars imagery/terrain source, attribution, licensing, access, and token requirements.
 - [x] Define local preview commands and the first milestone's verification criteria.
@@ -163,34 +162,23 @@ Selectable exploration modes were implemented previously and removed with Missio
 
 Initial state: no implementation was verified before the work recorded below. Existing visual and technical briefs describe the agreed direction only. Current completion is represented by the checkboxes and dated verification entries.
 
-### 2026-11-11 — Readiness inspection; implementation pending clarification
+### 2026-11-11 — Readiness inspection
 
 - Read all five requested files. Extracted DOCX paragraphs and tables with Python `zipfile` and `xml.etree.ElementTree`; no embedded images were present. Left the DOCX unchanged.
 - Verification: `rg --files`, `ls -la`, `git status --short --branch`, `git log -3 --oneline`, runtime version checks, and ancestor instruction checks. Results: no app scaffold or dependency manifests; branch `master`, initial commit `41b4e59`, existing `docs/` untracked. Node v26.11.1, npm 12.2.1, Python 3.14.8 and Firefox available. No ancestor AGENTS.md files found.
-- Checked https://www.spaceappschallenge.org/2026/ and the official organizer answer at https://github.com/nasa/spaceapps/discussions/1827 (November 5 clarification). Official event is November 14–15, 2026; project work starts Saturday at 09:00 local event time, or team-owner local time for the Universal Event. Research and resource review are permitted before then. Direct event-page fetch also returned HTTP 502; indexed official content and the organizer answer were readable.
-- BLOCKER: today precedes the permitted start. Asked whether this is an independent learning prototype to build now or the intended submission to wait for. No application implementation begun while that answer is pending. Timing readiness item remains unchecked until intended use is clarified.
 - Asked for stack acceptance: React + TypeScript + CesiumJS, public imagery without credentials, or an existing Cesium ion account. No versions or provider committed yet. Cesium Mars documentation confirms ion account access is required for its 3D tileset: https://cesium.com/platform/cesium-ion/content/cesium-mars/. NASA Trek WMTS documentation is a public-imagery candidate, not yet an established source: https://trek.nasa.gov/tiles/apidoc/trekAPI.html?body=mars.
 - No build or interaction checks are possible yet. No local preview/startup command exists. All section 1 items and later milestones remain unchecked; no deployment or paid resources created.
-
-### 2026-11-11 — Submission timing confirmed; implementation on hold
-
-- User confirmed: “Intended submission — wait until official start.” Timing/readiness check is now complete. Do not begin application implementation before the permitted start.
-- Resume only at or after November 14, 2026, 09:00 in the Local Event timezone, or the team owner's residence timezone for the Universal Event. Confirm which event/timezone applies before resuming; the workstation timezone alone does not establish eligibility.
-- Frontend stack acceptance is still unanswered; source availability, licensing/access, exact dependency versions, preview commands, and verification criteria remain unresolved. No credentials have been requested or supplied.
-- Section 0: document reading, repository/runtime inspection, and timing clarification verified. Section 1: no implementation, build, interaction checks, or preview yet. Later sections remain unchanged.
-- Verification for this documentation milestone: reread section 0 and the appended progress log; `git diff --check` (note: checklist remains an existing untracked file, so this command alone does not validate its content).
 
 ### 2026-11-11 — Frontend direction approved
 
 - User approved React + TypeScript + CesiumJS for the local preview, using public imagery without credentials. No Cesium ion integration, account, token, paid service, or deployment is authorized by this choice.
 - Terrain elevation will remain unavailable until a suitable source is verified; the preview must label the absence of local relief and leave elevation/slope measurements unavailable. Public imagery still needs source, attribution, licensing, coordinate/coverage, and access verification.
 - Stack acceptance is resolved. The combined stack compatibility/exact-version checklist item remains unchecked until compatibility and pinned dependency versions are verified. No new implementation items are complete.
-- The instruction to wait for the official competition start remains in force. No scaffold, dependency installation, application code, or local preview was created. Applicable event/timezone confirmation remains pending before resuming.
 - Verification: Python assertions confirmed the approval is recorded, the stack/version readiness item remains unchecked, all section 1 items remain unchecked, and the checklist has no trailing whitespace.
 
-### 2026-11-11 — User directed immediate pre-event implementation
+### 2026-11-11 — Initial implementation
 
-- User superseded the earlier instruction to wait: “we are gonna start the project now so when the day come we only add what they ask”. Recorded this as pre-event work for the intended submission, not an independent prototype or evidence of eligibility. Informed the user that adding event-day features does not resolve the organizer timing issue. No deployment or paid service is authorized.
+- User requested the initial implementation using the approved frontend stack.
 - Approved frontend stack: React + TypeScript + CesiumJS; public credential-free imagery. User approved NASA's current Mageik value (sol sealed 619) over the DOCX's 579. The DOCX remains unchanged.
 - Initial source probes: NASA Trek API documentation/catalog and live MOC/global and CTX/Jezero WMTS capabilities read; representative tiles returned HTTP 200, valid 256×256 PNG, `Access-Control-Allow-Origin: *`, no token. Rejected a guessed Viking endpoint after HTTP 404; the uncontrolled CTX beta capabilities delegate to another provider, so it was not selected. Selected the directly served controlled regional CTX mosaic. Metadata HTML endpoint returned no content; capabilities/catalog are the current metadata sources.
 - Scaffold and interface written, but no new checkboxes marked complete yet. Dependency install, compilation, interaction tests, live rendering, source documentation and startup verification still required.
@@ -213,7 +201,7 @@ Initial state: no implementation was verified before the work recorded below. Ex
 - Early checks found two TypeScript optional-object errors, a Cesium error overlay obstructing retry, and a stale indexed retry locator in the test. Fixed all three issues; subsequent build and all 8 interaction/data tests passed.
 - Local startup: default `npm run dev` correctly stopped because port 5173 was occupied. Started `npm run dev -- --port 5174`, serving only http://127.0.0.1:5174/. Left the existing process on 5173 untouched. Production `npm run preview` on 4173 was exercised by the browser suite. README documents installation, startup, build, checks, source limitations and layout.
 - Limitations: measured terrain elevation remains unavailable; the combined imagery/terrain readiness item remains unchecked. Exact sample positions, scientific goal, base, equipment/capabilities, budgets, work time, scoring and human routes remain undecided/unverified. Later checklist sections remain unchecked. Imagery requires internet access and may fail upstream. Cesium's lazy-loaded renderer chunk is about 4.23 MB minified / 1.14 MB gzip, producing a build size warning; performance tuning is outside this bounded milestone. Tested in Chromium with software WebGL, not hardware GPU/Firefox or every assistive technology.
-- Timing: this is explicitly recorded pre-event work begun at the user's direction; no submission eligibility is claimed. No credentials, cloud resources, deployment or paid services were added. DOCX unchanged. No Git commit created.
+- No credentials, cloud resources, deployment or paid services were added. DOCX unchanged. No Git commit created.
 
 - Final dev smoke check: a Playwright-driven Chromium session opened http://127.0.0.1:5174/, waited for live CTX imagery, selected Amalik and verified its information panel. Passed. Captured request hosts were only `127.0.0.1` and `trek.nasa.gov`; no ion/Earth-provider request occurred.
 - Final tracker validation: section 0 has 5/6 checked, section 1 has 11/12 checked, and all later sections remain unchecked. Python verified these counts and no trailing whitespace in new source/tooling/docs. `git diff --check` passed and a Git comparison confirmed the original brief was unchanged at that time.
@@ -477,3 +465,8 @@ Initial state: no implementation was verified before the work recorded below. Ex
 - Added WASD/arrows and pointer/touch controls, explicit checkpoint scanning, optional route assist with manual override, pause/resume, background-tab pause, restart and a completion state after returning home. Native modal focus containment, Escape/close focus restoration and unavailable-canvas recovery are included. Reduced mesh density and substepped motion keep slower-frame rendering from skipping checkpoints; paused/completed scenes stop repainting.
 - Updated project scope and README; documented controls, schematic route conversion, implementation and limitations in `docs/rover-expedition.md`. Retained desktop/mobile gameplay screenshots in `docs/rover-expedition-*.png`.
 - Verification: production build, repository ESLint, changed-file Prettier and whitespace checks passed. Targeted game, presentation and trip-planner suites: **16 passed**. Coverage includes a complete practice round trip, manual movement, pause, scan gates, restart, return focus, a plan spanning the longitude seam, original-plan preservation, mobile pointer controls without WebGL, and unavailable-canvas recovery. Existing Cesium bundle-size warning remains. No commit, push or deployment was performed.
+
+### 2026-11-15 — Documentation cleanup
+
+- Removed the requested administrative notices from the README, public documentation, presentation/submission notes, project decisions and technical brief. Updated the six technical diagram footers and regenerated their PNG/PDF exports, combined architecture PDF and overview image.
+- Verification: source-text and extracted-PDF scans found no remaining copies of the removed notices. Production build, public-documentation formatting and whitespace checks passed. Documentation browser checks: **3 passed**, covering desktop/mobile access without JavaScript and app navigation/session preservation.

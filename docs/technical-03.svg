@@ -60,7 +60,7 @@
 <text x="843" y="1436" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#bdccda">deliberately, retaining old versions for</text>
 <text x="843" y="1470" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#bdccda">reproducible rankings and rollback.</text>
 <path d="M64 1652 H1536" stroke="#2b3a4c"/>
-<text x="64" y="1690" font-family="DejaVu Sans,sans-serif" font-size="19" font-weight="400" fill="#9eb0c3">Read technical-brief.md for linked sources, assumptions and competition timing.</text>
+<text x="64" y="1690" font-family="DejaVu Sans,sans-serif" font-size="19" font-weight="400" fill="#9eb0c3">Read technical-brief.md for linked sources and assumptions.</text>
 <text x="64" y="1730" font-family="DejaVu Sans,sans-serif" font-size="17" font-weight="400" fill="#8298ae">Architecture proposal for discussion • No live services or validated mission scores</text>
 <text x="1400" y="1730" font-family="DejaVu Sans,sans-serif" font-size="20" font-weight="700" fill="#edb797">03 / 06</text>
 </svg>
